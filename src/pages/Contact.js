@@ -7,7 +7,7 @@ function Contact() {
           {" "}
            <a href="https://github.com/laviniaruiz/mod2project">
             {" "}
-            Contact Us {" "}
+            Contact {" "}
           </a>{" "}
           
         </p>

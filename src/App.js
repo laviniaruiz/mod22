@@ -7,10 +7,10 @@ import Nav from './components/Nav';
 import Header from './components/Home';
 import Contact from './pages/Contact';
 import Comment from './pages/Comment';
+import './index.css';
+
 
 function App() {
-
-    // const apiKey = '7747d3f7f3c84c3715d69cbed5db6965'
 
   return (
     <div className="App">
@@ -25,6 +25,10 @@ function App() {
 
     </div>
   
+  // <Routes>
+  //   <Route path="/" element={Footer />}
+  // </Routes>
+
   );
 }
 

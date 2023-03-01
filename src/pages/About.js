@@ -8,7 +8,7 @@ function About() {
           {" "}
            <a href="https://github.com/laviniaruiz/mod2project">
             {" "}
-            About Us {" "}
+            About {" "}
           </a>{" "}
           
         </p>

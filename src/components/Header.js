@@ -21,11 +21,12 @@ export default function Header() {
 
     return (
       <div className="container">
-        <input className="input" placeholder="Enter City" onChange={e => setCity(e.target.value)} value={city}
-        />
-      {/* fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`).then( */}
-      
-      
+        <input className="input" placeholder="Enter City" />
+
+        <div className="container">
+          <input className="input" type="button" value="Click Here" />
+
+        </div>
       </div>
     );
   }
