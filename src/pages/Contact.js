@@ -1,20 +1,19 @@
+import { Link } from 'react-router-dom'
 
-
-function Contact() {
+export default function Contact() {
   return (
     <div>
       <contact>
 
-        <p className="contact">
-          {" "}
-           <a href="https://github.com/laviniaruiz/mod2project">
-            {" "}
-            Contact {" "}
-          </a>{" "}
-          
+        <p className="c1">
+          <Link to="https://github.com/laviniaruiz/mod2project">@Github</Link>
         </p>
+
+        <p className="c2">
+          <Link to="https://github.com/laviniaruiz/mod2project">Leave Comment</Link>
+        </p>
+
       </contact>
     </div>
   );
 }
-export default Contact;

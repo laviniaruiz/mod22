@@ -19,15 +19,29 @@
     background-color: purple;
 }
 
-.paragraph {
+.p1 {
+    text-align: center;
     color: white;
+    /* font-size: 10px; */
 }
+
+.c1, .c2 {
+    text-align: center;
+}
+
 
 .CodedBy {
     text-align: center;
 }
 
 .footer {
+    border-top: 1px solid purple;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    /*left: 500px; */
     text-align: center;
     font-family: cursive;
+
 }
