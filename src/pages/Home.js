@@ -1,50 +1,60 @@
 import { useState } from "react";
+import Body from "../components/Body";
+import Header from "../components/Header";
 
 export default function Home(getCity) {
 
   let [input, setInput] = useState("");
   let [data1, setData] = useState(null);
 
-  async function getWeather({weather})
+  async function getWeather({ weather }) {
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=7747d3f7f3c84c3715d69cbed5db6965`
+    try {
+      let response = await fetch(url)
+      let data = await response.json()
+      setData(data)
+      console.log(data)
 
-  {
-    let url =`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=7747d3f7f3c84c3715d69cbed5db6965`
-  try{
-    let response = await fetch(url)
-    let data = await response.json()
-    setData(data)
-    console.log(data)
-
-  } catch(error) {
-    console.log(error)
-  }
+    } catch (error) {
+      console.log(error)
+    }
   }
 
-  function handleChange(evt){
+  function handleChange(evt) {
     setInput(evt.target.value)
   }
 
-  function handleSubmit(evt){
+  function handleSubmit(evt) {
     evt.preventDefault()
     // getWeather(input)
   }
-    return (
+  return (
 
-      <div className="home">
-        <h1>♥ Welcome to Lala-Land Weather Channel™ ♥</h1>
-        {/* <p className="paragraph">♡ The Weather Channel of Lala-Land is an American free television channel owned by
+    <div className="home">
+
+      <Header />
+      <div>
+        <img style={{width: "200px"}} src={require("../weather.gif")} alt="weather"></img>
+      </div>
+      
+      <Body />
+
+      {/* <p className="paragraph">♡ The Weather Channel of Lala-Land is an American free television channel owned by
         Lala-Land Group ♡ The channel's headquarter is in New York City ♡</p> */}
 
-        <form onSubmit={handleSubmit}>
-          <input value={input} placeholder="Enter City" onChange={handleChange} />
-          <button onClick={getWeather}>Search</button>
-        </form>
+      <form onSubmit={handleSubmit}>
+        <input value={input} placeholder="Enter City" onChange={handleChange} />
+        <button onClick={getWeather}>Search</button>
+      </form>
 
-        {/* <p>{data1.main.temp}</p> */}
-        {/* {data1 && <getWeather weather={data1}/> } */}
+      <h1>{data1?.name}</h1>
+      {data1 && <p>Temp: {Math.floor((data1?.main?.temp - 273.15) * (9 / 5) + (32))}</p>}
+      {data1 && <p>Feels Like: {Math.floor((data1?.main?.feels_like - 273.15) * (9 / 5) + (32))}</p>}
+      {data1 && <p>Humidity: {data1?.main?.humidity}</p>}
+      {/* {data1 && <getWeather weather={data1}/> } */}
 
-      </div>
+    </div>
 
 
-    );
-  }
+  );
+}
