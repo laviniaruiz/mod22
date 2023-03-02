@@ -1,33 +1,36 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import About from './pages/About';
 import Footer from './components/Footer';
-import Home from './components/Header';
+import Header from './components/Header';
 import Nav from './components/Nav';
-import Header from './components/Home';
+import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Comment from './pages/Comment';
-import './index.css';
+import './App.css';
+import { getActiveElement } from '@testing-library/user-event/dist/utils';
 
 
 function App() {
 
+  function getWeather() {
+
+  }
+
   return (
     <div className="App">
 
-      <Nav />      
-      <Home />
-      <Header />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home getWeather={getWeather} />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Contact />} />
+      </Routes>
+      
       <Footer />
-      <About />
-      <Contact />
-      <Comment />
-
+      
     </div>
   
-  // <Routes>
-  //   <Route path="/" element={Footer />}
-  // </Routes>
 
   );
 }

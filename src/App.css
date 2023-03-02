@@ -1,17 +1,33 @@
-/* .container {
+.nav {
     display: flex;
-    padding: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    background-color: #b465da;
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+  }
+
+.home {
+    text-align: center;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
 }
 
-
 .input {
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    border: 1px solid red;
-    border-radius: 6px;
-    font-size: 16px; */
-} */
+    background-color: purple;
+}
+
+.paragraph {
+    color: white;
+}
+
+.CodedBy {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-family: cursive;
+}

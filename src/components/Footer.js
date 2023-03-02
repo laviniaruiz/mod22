@@ -1,30 +1,13 @@
-// export default function Footer() {
-//     return (
-//       <div className="footer">
+import { Link } from "react-router-dom"
 
-//         <p>This was coded by Lala - hosted on Netlify</p>
+export default function Footer(props) {
+    return (
 
-//       </div>
-//     );
-//   }
+      <div className="footer">
+        <div>
+          <h5>© 2023 LALA-LAND CORPORATION OF AMERICA </h5>
+        </div>
+      </div>
 
-import React from "react";
-
-function Footer() {
-  return (
-    <div>
-      <footer>
-
-        <p className="CodedBy">
-          {" "}
-          Coded by Lala <a href="https://github.com/laviniaruiz/mod2project">
-            {" "}
-            @Github!{" "}
-          </a>{" "}
-          
-        </p>
-      </footer>
-    </div>
-  );
-}
-export default Footer;
+    );
+  }

@@ -1,10 +1,19 @@
-export default function Nav() {
+import { Link } from "react-router-dom"
+
+export default function Nav(props) {
     return (
       <div className="nav">
-        
-        <h1>Welcome to Lala-Land Weather Channel</h1>
-        <p>The Weather Channel of Lala-Land is an American pay television channel owned by
-        Lala-Land Group. The channel's headquarter is in New York City.</p>
+        <div>
+          <Link to="/">Home</Link>
+        </div>
+
+        <div>
+          <Link to="/about">About</Link>
+        </div>
+
+        <div>
+          <Link to="/contact">Contact</Link>
+        </div>
         
       </div>
     );
