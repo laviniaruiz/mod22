@@ -34,7 +34,7 @@ export default function Home(getCity) {
       <Body />
 
       <div className="img">
-        <img style={{ width: "100px" }} src={require("../logo.jpg")} alt="logo"></img>
+      <img style={{ width: "100px"}} src={require("../weather.gif")} alt="weather"></img>
       </div>
 
 
