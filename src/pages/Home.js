@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Body from "../components/Body";
-import Header from "../components/Header";
 
 export default function Home(getCity) {
 
@@ -32,12 +31,12 @@ export default function Home(getCity) {
 
     <div className="home">
 
-      <Header />
-      <div>
-        <img style={{width: "200px"}} src={require("../weather.gif")} alt="weather"></img>
-      </div>
-      
       <Body />
+
+      <div>
+        <img style={{ width: "150px" }} src={require("../weather.gif")} alt="weather"></img>
+      </div>
+
 
       {/* <p className="paragraph">♡ The Weather Channel of Lala-Land is an American free television channel owned by
         Lala-Land Group ♡ The channel's headquarter is in New York City ♡</p> */}

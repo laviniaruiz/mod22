@@ -3,17 +3,19 @@ import { Link } from 'react-router-dom'
 export default function Contact() {
   return (
     <div>
-      <contact>
-
+      
         <p className="c1">
           <Link to="https://github.com/laviniaruiz/mod2project">@Github</Link>
         </p>
 
         <p className="c2">
-          <Link to="https://github.com/laviniaruiz/mod2project">Leave Comment</Link>
+          <Link to="https://github.com/laviniaruiz/mod2project">@Netlify</Link>
         </p>
 
-      </contact>
+        {/* <p className="c3">
+          <Link to="https://github.com/laviniaruiz/mod2project">Leave Comment</Link>
+        </p> */}
+
     </div>
   );
 }
