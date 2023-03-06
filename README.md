@@ -69,4 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### A live version of this project is available at https://main--guileless-mousse-8d2d17.netlify.app/
+### Live Site
+
+A live version of this project is available at https://main--guileless-mousse-8d2d17.netlify.app/
