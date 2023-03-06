@@ -76,3 +76,7 @@ This is a weather app, it uses Yahoo Weather API. https://openweathermap.org/api
 ### Live Site
 
 A live version of this project is available at https://main--guileless-mousse-8d2d17.netlify.app/
+
+### Language
+
+Built with HTML, CSS, JavaScript using the React Library
