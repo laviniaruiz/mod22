@@ -5,10 +5,9 @@ export default function Contact() {
     
     <div>
 
-      <p className='c3'>
-      {/* alt25 */}
+      <div className='c3'>
         <h1> Contact Us </h1>
-      </p>
+      </div>
 
       <p className="c1">
         <Link to="https://github.com/laviniaruiz/mod2project">@Github</Link>
