@@ -71,8 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Weather App
 
-This is a weather app, it uses Yahoo Weather API. https://openweathermap.org/api
-Where you can find global cities along with the Temperature, Feels Like, and the Humidity
+This is a weather app, it uses Weather API https://openweathermap.org/api
+Where you can find global cities with Temperature, Feels Like, and the Humidity
 
 ### Language
 
