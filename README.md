@@ -78,6 +78,13 @@ Where you can find global cities with Temperature, Feels Like, and the Humidity
 
 Built with HTML, CSS, JavaScript using the React Library
 
+### Code Used
+* React JS
+* React Router
+* API Server
+* Fetch
+* State [useState, useEffect]
+
 ### Live Site
 
 A live version of this project is available at https://main--guileless-mousse-8d2d17.netlify.app/
