@@ -78,10 +78,6 @@ Where you can find global cities along with the Temperature, Feels Like, and the
 
 Built with HTML, CSS, JavaScript using the React Library
 
-### Tech Used
-
-
-
 ### Live Site
 
 A live version of this project is available at https://main--guileless-mousse-8d2d17.netlify.app/
